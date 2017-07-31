@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libsqlite3-0 \
 		libssl1.0.0 \
 		python-setuptools python-dev \
-        build-essential wget \
+        build-essential wget
 
 ADD virenv /tmp
 
