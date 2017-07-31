@@ -16,7 +16,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libssl1.0.0 \
 		python-setuptools python-dev \
         build-essential wget \
-	&& rm -rf /var/lib/apt/lists/*
 
 ADD virenv /tmp
 
