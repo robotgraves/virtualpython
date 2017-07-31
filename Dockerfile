@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential wget \
 	&& rm -rf /var/lib/apt/lists/*
 
-ADD virtualenv-15.0.0.tar.gz /tmp/virtualenv-15.0.0.tar.gz
+ADD virenv /tmp
 
 RUN tar -xzvpf /tmp/virtualenv-15.0.0.tar.gz -C /tmp && \
     python /tmp/virtualenv-15.0.0/virtualenv.py /opt/v && \
