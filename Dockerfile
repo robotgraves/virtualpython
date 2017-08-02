@@ -25,4 +25,7 @@ RUN tar -xzvpf /tmp/virtualenv-15.0.0.tar.gz -C /tmp && \
 
 RUN easy_install pip
 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl
+
 CMD ["/bin/bash"]
