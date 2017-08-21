@@ -29,6 +29,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     zip
 
-RUN pip install yaml
+RUN pip install pyyaml
 
 CMD ["/bin/bash"]
