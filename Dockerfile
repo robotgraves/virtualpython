@@ -27,6 +27,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     zip
 
+RUN /usr/bin/easy_install virtualenv
+RUN virtualenv /opt/v
 RUN /opt/v/bin/pip install pyyaml
 
 CMD ["/bin/bash"]
